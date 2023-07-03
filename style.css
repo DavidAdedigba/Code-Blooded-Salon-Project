@@ -6,7 +6,33 @@
 
 @font-face {
     font-family: Salonfont;
-    src: url(../Trial2/font/Kablammo-Regular-VariableFont_MORF.ttf);
+    src: url(../Trial2/font/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../Trial2/font/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
+.namebar{
+    /* background-color: lightgray;  */
+         background: linear-gradient(lightgray, gray);
+        /* background: linear-gradient(red, brown); */
+        /* background: linear-gradient(rgb(62, 62, 141),rgb(185, 141, 141), brown); */
+        /* background: linear-gradient( gray, lightgray) ; */
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+}
+
+.header{
+   font-family: Salonfont;
+   font-size: 4em;
+    color: brown; 
+    
+   
 }
 
 h1{
@@ -16,55 +42,16 @@ h1{
     text-align: center;
     align-items: center;
 }
-.salon {
-    float: left;
-    background-color: lightgray;
-    height: 100px;
-    width: 33.33%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: Salonfont;
-    color: brown;
-    font-size: 3em;
-    text-shadow: 
-    0.025em 0.025em 0 yellow,
-    0.05em 0.05em 0 blue,
-    0.075 0.075em 0 red,
-    0.1em 0.1em 0 black,;
-}
+
 
 .logo {
-    float: left;
-    background-color: lightgray;
-    height: 100px;
-     width: 33.33%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center
-
-}
-.name{
-    float: left;
-    background-color: lightgray;
-    height: 100px;
-    width: 33.33%;
-    display: flex;
-    justify-content: center;
-    text-align: center;    
-    align-items: center;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: Salonfont;
-    color: brown;
-    font-size: 3em;
+    width: 70px;
+    height: 70px;
 
 }
 
 .links{
-    background-color: #141414;
+    background-color: gray;
     text-align: center;
 }
 
@@ -74,9 +61,65 @@ a{
     
 }
 
+a:hover{
+    color: lightseagreen;
+}
+
 .background{
    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./backg.jpg) center/cover no-repeat fixed;
+    /* background: linear-gradient(rgba(223, 171, 171, 0.4),  rgba(32, 1, 1, 0.5)), url(./backg.jpg) center/cover no-repeat fixed; */
+    /* background: linear-gradient(rgba(211, 52, 52, 0.4), rgba(32, 1, 1, 0.5)), url(./backg.jpg) center/cover no-repeat fixed; */
    /* width: 1200px; */
    height: 800px;
+display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
    
+}
+.appointment{
+    border-color:  black;
+    border-width: 2px;
+    border-radius: 0px 10px 0px 10px;
+    display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: transparent;
+        width: 100px;
+        padding: 10px 70px;
+        
+        /* margin: 50% auto; */
+}
+button{
+    height: 70px;
+    width: 400px;
+}
+
+.applink{
+    font-size: 1.5em;
+    color: brown;
+    /* font-family: myFont; */
+    font-family: Salonfont;
+}
+
+.applink:hover{
+    /* color: rgb(209, 191, 191); */
+    color: red;
+}
+#checking{
+    font-style: bold;
+    font-size: 50px;
+    text-shadow: 5px 20px 0px yellow;
+}
+
+
+.welcome{
+    font-family: myFont;
+    font-size: 2em;
+    /* background: linear-gradient( lightgray, gray); */
+    background-color: gray;
+    height: 50px;
+    color: white;
 }
